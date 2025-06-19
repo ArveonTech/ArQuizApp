@@ -1,7 +1,9 @@
+import IntroPages from "./pages/IntroPages";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl text-blue-500">Hallo</h1>
+      <IntroPages />
     </>
   );
 }

@@ -1,1 +1,10 @@
+@font-face {
+  font-family: Lilita One;
+  src: url("../src/assets/fonts/LilitaOne-Regular.ttf");
+}
+
+body {
+  font-family: "Lilita One", sans-serif;
+}
+
 @import "tailwindcss";
