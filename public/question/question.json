@@ -1,0 +1,362 @@
+[
+  {
+    "level": "Easy",
+    "question": "Apa ibu kota Indonesia?",
+    "options": ["Bandung", "Jakarta", "Surabaya", "Medan"],
+    "answer": "Jakarta"
+  },
+  {
+    "level": "Easy",
+    "question": "Hewan apa yang sering disebut sahabat manusia?",
+    "options": ["Kucing", "Burung", "Anjing", "Ikan"],
+    "answer": "Anjing"
+  },
+  {
+    "level": "Easy",
+    "question": "Berapa hasil dari 2 + 2?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4"
+  },
+  {
+    "level": "Easy",
+    "question": "Apa warna langit saat cerah?",
+    "options": ["Hijau", "Merah", "Biru", "Kuning"],
+    "answer": "Biru"
+  },
+  {
+    "level": "Easy",
+    "question": "Siapa yang menciptakan Facebook?",
+    "options": ["Elon Musk", "Jeff Bezos", "Mark Zuckerberg", "Bill Gates"],
+    "answer": "Mark Zuckerberg"
+  },
+  {
+    "level": "Easy",
+    "question": "Apa nama planet ketiga dari matahari?",
+    "options": ["Mars", "Venus", "Bumi", "Jupiter"],
+    "answer": "Bumi"
+  },
+  {
+    "level": "Easy",
+    "question": "Bahasa apa yang digunakan di Jepang?",
+    "options": ["Korea", "Mandarin", "Jepang", "Thailand"],
+    "answer": "Jepang"
+  },
+  {
+    "level": "Easy",
+    "question": "Berapakah jumlah hari dalam 1 minggu?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "level": "Easy",
+    "question": "Apa simbol kimia dari air?",
+    "options": ["H2O", "CO2", "O2", "NaCl"],
+    "answer": "H2O"
+  },
+  {
+    "level": "Easy",
+    "question": "Apa warna bendera Indonesia?",
+    "options": ["Merah Putih", "Putih Hijau", "Merah Kuning", "Merah Hitam"],
+    "answer": "Merah Putih"
+  },
+  {
+    "level": "Medium",
+    "question": "Siapa penemu lampu pijar?",
+    "options": ["Nikola Tesla", "Albert Einstein", "Thomas Edison", "Isaac Newton"],
+    "answer": "Thomas Edison"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa nama organ yang memompa darah ke seluruh tubuh?",
+    "options": ["Paru-paru", "Lambung", "Jantung", "Ginjal"],
+    "answer": "Jantung"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa ibu kota Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "answer": "Canberra"
+  },
+  {
+    "level": "Medium",
+    "question": "Dalam musik, berapa jumlah nada dalam satu oktaf?",
+    "options": ["5", "7", "8", "12"],
+    "answer": "8"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa nama benua terbesar di dunia?",
+    "options": ["Afrika", "Amerika", "Asia", "Eropa"],
+    "answer": "Asia"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa nama zat yang dibutuhkan tumbuhan untuk fotosintesis?",
+    "options": ["Oksigen", "Nitrogen", "Karbon dioksida", "Hidrogen"],
+    "answer": "Karbon dioksida"
+  },
+  {
+    "level": "Medium",
+    "question": "Siapa yang menulis novel 'Laskar Pelangi'?",
+    "options": ["Andrea Hirata", "Tere Liye", "Dee Lestari", "Habiburrahman El Shirazy"],
+    "answer": "Andrea Hirata"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa satuan ukuran energi dalam sistem SI?",
+    "options": ["Watt", "Newton", "Joule", "Kelvin"],
+    "answer": "Joule"
+  },
+  {
+    "level": "Medium",
+    "question": "Dalam dunia komputer, apa arti dari RAM?",
+    "options": ["Read and Memory", "Random Access Memory", "Run Access Mode", "Read Access Mode"],
+    "answer": "Random Access Memory"
+  },
+  {
+    "level": "Medium",
+    "question": "Siapa presiden pertama Amerika Serikat?",
+    "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+    "answer": "George Washington"
+  },
+  {
+    "level": "Medium",
+    "question": "Negara mana yang memiliki jumlah penduduk terbanyak di dunia?",
+    "options": ["India", "Amerika", "Indonesia", "Cina"],
+    "answer": "Cina"
+  },
+  {
+    "level": "Medium",
+    "question": "Siapa tokoh utama dalam cerita Ramayana?",
+    "options": ["Krishna", "Rama", "Arjuna", "Sita"],
+    "answer": "Rama"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa lambang unsur kimia untuk emas?",
+    "options": ["Ag", "Au", "Pb", "Fe"],
+    "answer": "Au"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa nama bagian terkecil dari makhluk hidup?",
+    "options": ["Sel", "Jaringan", "Organ", "Atom"],
+    "answer": "Sel"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa nama alat musik petik tradisional dari Jawa?",
+    "options": ["Angklung", "Sasando", "Kecapi", "Gamelan"],
+    "answer": "Kecapi"
+  },
+  {
+    "level": "Medium",
+    "question": "Siapa penulis Harry Potter?",
+    "options": ["J.K. Rowling", "Stephen King", "Roald Dahl", "Rick Riordan"],
+    "answer": "J.K. Rowling"
+  },
+  {
+    "level": "Medium",
+    "question": "Dalam matematika, berapa hasil dari 12 x 12?",
+    "options": ["124", "144", "134", "154"],
+    "answer": "144"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa nama zat yang menyebabkan warna hijau pada daun?",
+    "options": ["Karoten", "Klorofil", "Selulosa", "Nitrogen"],
+    "answer": "Klorofil"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa nama alat untuk mengukur suhu?",
+    "options": ["Barometer", "Termometer", "Altimeter", "Higrometer"],
+    "answer": "Termometer"
+  },
+  {
+    "level": "Medium",
+    "question": "Apa sebutan untuk tahun yang jumlah harinya 366?",
+    "options": ["Tahun biasa", "Tahun kabisat", "Tahun komet", "Tahun masehi"],
+    "answer": "Tahun kabisat"
+  },
+  {
+    "level": "Hard",
+    "question": "Siapa ilmuwan yang menemukan hukum gravitasi setelah melihat apel jatuh dari pohon?",
+    "options": ["Galileo Galilei", "Albert Einstein", "Isaac Newton", "Stephen Hawking"],
+    "answer": "Isaac Newton"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama teori fisika yang menyatukan ruang dan waktu dalam satu entitas yang disebut ruang-waktu?",
+    "options": ["Teori Evolusi", "Teori Relativitas", "Teori Big Bang", "Teori Quantum"],
+    "answer": "Teori Relativitas"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama enzim yang memecah protein dalam sistem pencernaan manusia?",
+    "options": ["Amilase", "Lipase", "Pepsin", "Laktase"],
+    "answer": "Pepsin"
+  },
+  {
+    "level": "Hard",
+    "question": "Siapa ilmuwan yang dikenal sebagai bapak genetika modern?",
+    "options": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "RicHard Dawkins"],
+    "answer": "Gregor Mendel"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama ibukota dari negara Kazakhstan?",
+    "options": ["Astana", "Almaty", "Tashkent", "Bishkek"],
+    "answer": "Astana"
+  },
+  {
+    "level": "Hard",
+    "question": "Dalam sistem biner, berapa nilai dari 1101?",
+    "options": ["13", "12", "14", "15"],
+    "answer": "13"
+  },
+  {
+    "level": "Hard",
+    "question": "Berapa volume bola dengan jari-jari 3 satuan?",
+    "options": ["36π", "27π", "18π", "(4/3) × π × 27"],
+    "answer": "(4/3) × π × 27"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama lapisan atmosfer yang melindungi bumi dari sinar ultraviolet?",
+    "options": ["Troposfer", "Stratosfer", "Ozonosfer", "Termosfer"],
+    "answer": "Ozonosfer"
+  },
+  {
+    "level": "Hard",
+    "question": "Siapa pelukis terkenal dari lukisan Mona Lisa?",
+    "options": ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Claude Monet"],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama proses perubahan zat padat langsung menjadi gas?",
+    "options": ["Kondensasi", "Sublimasi", "Evaporasi", "Deposisi"],
+    "answer": "Sublimasi"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama unsur kimia dengan simbol 'Hg'?",
+    "options": ["Hidrogen", "Merkuri", "Helium", "Magnesium"],
+    "answer": "Merkuri"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama teori yang menjelaskan bahwa elektron dalam atom menempati tingkat energi tertentu?",
+    "options": ["Teori Atom Bohr", "Teori Relativitas", "Teori Kuantum", "Teori Medan Elektromagnetik"],
+    "answer": "Teori Atom Bohr"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama proses pembentukan batuan sedimen?",
+    "options": ["Erosi", "Sedimentasi", "Metamorfosis", "Kompaksi"],
+    "answer": "Sedimentasi"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama hukum yang menyatakan bahwa tekanan gas berbanding terbalik dengan volume pada suhu konstan?",
+    "options": ["Hukum Boyle", "Hukum Charles", "Hukum Avogadro", "Hukum Ideal"],
+    "answer": "Hukum Boyle"
+  },
+  {
+    "level": "Hard",
+    "question": "Siapa yang menciptakan teori relativitas umum?",
+    "options": ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileo Galilei"],
+    "answer": "Albert Einstein"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama planet terbesar di tata surya?",
+    "options": ["Mars", "Jupiter", "Saturnus", "Neptunus"],
+    "answer": "Jupiter"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama proses di mana air berubah menjadi uap?",
+    "options": ["Kondensasi", "Evaporasi", "Sublimasi", "Deposisi"],
+    "answer": "Evaporasi"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama teori yang menjelaskan asal usul alam semesta?",
+    "options": ["Teori Big Bang", "Teori Relativitas", "Teori Evolusi", "Teori Kuantum"],
+    "answer": "Teori Big Bang"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama senyawa kimia yang terdiri dari dua atom hidrogen dan satu atom oksigen?",
+    "options": ["Hidrogen Peroksida", "Air", "Metana", "Amonia"],
+    "answer": "Air"
+  },
+  {
+    "level": "Hard",
+    "question": "Siapa penulis novel '1984'?",
+    "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "Isaac Asimov"],
+    "answer": "George Orwell"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama proses di mana sel-sel tubuh membelah untuk menghasilkan sel-sel baru?",
+    "options": ["Mitosis", "Meiosis", "Fagositosis", "Transkripsi"],
+    "answer": "Mitosis"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama unsur kimia dengan nomor atom 26?",
+    "options": ["Besi", "Tembaga", "Zinc", "Aluminium"],
+    "answer": "Besi"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama alat yang digunakan untuk mengukur tekanan atmosfer?",
+    "options": ["Barometer", "Termometer", "Higrometer", "Anemometer"],
+    "answer": "Barometer"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama proses di mana gas berubah menjadi cair?",
+    "options": ["Kondensasi", "Evaporasi", "Sublimasi", "Deposisi"],
+    "answer": "Kondensasi"
+  },
+  {
+    "level": "Hard",
+    "question": "Siapa yang menemukan vaksin pertama untuk cacar?",
+    "options": ["Louis Pasteur", "Edward Jenner", "Jonas Salk", "Albert Calmette"],
+    "answer": "Edward Jenner"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama senyawa yang terdiri dari karbon dan hidrogen?",
+    "options": ["Karbohidrat", "Lipid", "Protein", "Asam Nukleat"],
+    "answer": "Karbohidrat"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama proses di mana cahaya matahari diubah menjadi energi kimia oleh tumbuhan?",
+    "options": ["Respirasi", "Fotosintesis", "Transpirasi", "Fermentasi"],
+    "answer": "Fotosintesis"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama sistem penulisan yang digunakan oleh bangsa Mesir kuno?",
+    "options": ["Hieroglif", "Cuneiform", "Alfabet", "Piktogram"],
+    "answer": "Hieroglif"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama sel saraf yang bertugas mengirimkan informasi melalui impuls listrik?",
+    "options": ["Neuron", "Eritrosit", "Leukosit", "Osteosit"],
+    "answer": "Neuron"
+  },
+  {
+    "level": "Hard",
+    "question": "Apa nama partikel subatom yang tidak memiliki muutan (netral)?",
+    "options": ["Proton", "Elektron", "Neutron", "Positron"],
+    "answer": "Neutron"
+  }
+]
