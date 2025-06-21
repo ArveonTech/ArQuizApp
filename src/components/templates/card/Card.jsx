@@ -21,7 +21,7 @@ const Card = ({ data, jumlah, i, handleClick }) => {
         <div className="grid grid-cols-2 gap-4 mt-4">
           {data.options &&
             data.options.map((op, index) => (
-              <button key={index} className={`${buttonBg[index]} text-white py-2 rounded-lg hover:brightness-110 transition cursor-pointer`} value={op} onClick={(e) => handleClick(e)}>
+              <button key={index} className={`${buttonBg[index]} text-white py-2 px-1.5 rounded-lg hover:brightness-110 transition cursor-pointer`} value={op} onClick={(e) => handleClick(e)}>
                 {op}
               </button>
             ))}

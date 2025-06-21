@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CardResult from "../templates/card/CardResult";
 import AOS from "aos";
@@ -8,23 +8,23 @@ const ResultPages = () => {
   const navigate = useNavigate();
   const rawData = localStorage.getItem("answerUser");
   const dataSet = rawData ? JSON.parse(rawData) : [];
-  const level = localStorage.getItem("difficulty");
-  const expectedLength = level === "easy" ? 10 : level === "medium" ? 20 : level === "hard" ? 30 : null;
+  const [correctAmount, setCorrectAmount] = useState(0);
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
-
-    // validasi dataSet & jumlah soal
-    if (!dataSet || !expectedLength || dataSet.length !== expectedLength) {
-      navigate("/");
-    }
   }, []);
 
   if (!dataSet) {
     navigate("/");
   }
 
+  useEffect(() => {
+    const count = dataSet.filter((item) => item.correctAnswer === item.userAnswer).length;
+    setCorrectAmount(count);
+  }, [dataSet]);
+
   const handleClick = () => {
+    localStorage.removeItem("answerUser");
     localStorage.removeItem("difficulty");
   };
 
@@ -33,6 +33,9 @@ const ResultPages = () => {
       <h1 className="text-white text-2xl text-center pt-10 mb-10" data-aos="fade-up">
         ✅ Hasil Kuis
       </h1>
+      <h2 className="text-white text-xl text-center mt-4 mb-10" data-aos="fade-up">
+        🎯 Jawaban Benar : {correctAmount} / {dataSet.length}
+      </h2>
       <div className="flex flex-wrap justify-center gap-10" data-aos="fade-up">
         {dataSet && dataSet.map((data, i) => <CardResult data={data} key={i} />)}
       </div>

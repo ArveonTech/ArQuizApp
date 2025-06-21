@@ -9,7 +9,7 @@ const useQuestionData = (level) => {
     const fetchData = async () => {
       try {
         const response = await getQuestion();
-        const data = response.data.filter((items) => items.level.toLowerCase() === level.toLowerCase());
+        const data = response.data.filter((items) => items.level?.toLowerCase() === level?.toLowerCase());
         setQuestions(data);
       } catch (error) {
         setError(error);

@@ -15,10 +15,23 @@ const MainPages = () => {
   const [clearQuiz, setClearQuiz] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const errorMessage = (message) => {
+    toast.error(message, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
+
   useEffect(() => {
     localStorage.removeItem("answerUser");
     const level = localStorage.getItem("difficulty");
-
     if (!level) {
       navigate("/");
     }
@@ -26,19 +39,9 @@ const MainPages = () => {
 
   useEffect(() => {
     if (error) {
-      toast.error("❌ Ada yang salah, silahkan kembali", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-      });
+      errorMessage("❌ Ada kesalahan, coba kembali");
     }
-  }, []);
+  }, [error]);
 
   const handleClick = (e) => {
     const currentSoal = data[currentIndex];
