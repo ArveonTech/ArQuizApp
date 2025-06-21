@@ -38,7 +38,7 @@ const ResultPages = () => {
       </div>
       <Link to="/">
         <button className="block mt-10 bg-green-600 w-20 mx-auto rounded-2xl text-white p-2 cursor-pointer hover:bg-green-800" onClick={() => handleClick()}>
-          Kembali
+          Coba Lagi
         </button>
       </Link>
     </div>

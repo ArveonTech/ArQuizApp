@@ -3,22 +3,41 @@ import useQuestionData from "../hooks/useQuestion";
 import Card from "../templates/card/Card";
 import { Link, useNavigate } from "react-router-dom";
 import useShuffle from "../hooks/useShuffle";
+import Countdown from "react-countdown";
+import useLevel from "../hooks/useLevel";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 
 const MainPages = () => {
   const navigate = useNavigate();
-  const [level, setLevel] = useState(null);
-  const [clearQuiz, setClearQuiz] = useState(false);
+  const { level, deadline } = useLevel();
   const { questions, error } = useQuestionData(level);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const data = useMemo(() => useShuffle(questions), [questions]);
+  const [clearQuiz, setClearQuiz] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     localStorage.removeItem("answerUser");
     const level = localStorage.getItem("difficulty");
+
     if (!level) {
-      navigate("/level");
+      navigate("/");
     }
-    setLevel(level);
+  }, []);
+
+  useEffect(() => {
+    if (error) {
+      toast.error("❌ Ada yang salah, silahkan kembali", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    }
   }, []);
 
   const handleClick = (e) => {
@@ -44,6 +63,14 @@ const MainPages = () => {
     setCurrentIndex(currentIndex + 1);
   };
 
+  const renderer = ({ minutes, seconds }) => {
+    return (
+      <span className="text-red-500 text-3xl mt-10 mx-auto block text-center">
+        {(minutes < 10 ? "0" : "") + minutes}:{(seconds < 10 ? "0" : "") + seconds}{" "}
+      </span>
+    );
+  };
+
   return (
     <div className="bg-blue-950 min-h-screen flex flex-col">
       <div className="flex justify-between items-center pt-5">
@@ -55,16 +82,22 @@ const MainPages = () => {
         </Link>
       </div>
       {clearQuiz ? (
-        <div className="bg-blue-950 flex-1 flex justify-center items-center">
+        <div className="bg-blue-950 flex-1 flex flex-col justify-center items-center">
+          <h1 className="text-4xl mb-10 text-red-400">Kuis mu telah berakhir</h1>
           <Link to="/result">
             <button className="bg-blue-800  p-4 rounded-2xl cursor-pointer text-white ">Lihat Hasil</button>
           </Link>
         </div>
       ) : (
-        <div className="flex-1 overflow-y-auto flex justify-center items-center px-10">
-          {questions.length > 0 && questions[currentIndex] && <Card data={data[currentIndex]} jumlah={questions} key={currentIndex} i={currentIndex} handleClick={handleClick} />}
+        <div className="flex-1 flex flex-col items-center justify-center">
+          <div className="mb-10">
+            <h1 className="text-2xl text-white">Waktu :</h1>
+            <p className="countdown-timer-container">{deadline && <Countdown date={deadline} renderer={renderer} onComplete={() => setClearQuiz(true)} />}</p>
+          </div>
+          <div className="px-10">{questions.length > 0 && questions[currentIndex] && <Card data={data[currentIndex]} jumlah={questions} key={currentIndex} i={currentIndex} handleClick={handleClick} />}</div>
         </div>
       )}
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick={false} rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" transition={Bounce} />
     </div>
   );
 };
