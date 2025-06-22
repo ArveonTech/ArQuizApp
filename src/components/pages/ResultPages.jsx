@@ -40,7 +40,7 @@ const ResultPages = () => {
         {dataSet && dataSet.map((data, i) => <CardResult data={data} key={i} />)}
       </div>
       <Link to="/">
-        <button className="block mt-10 bg-green-600 w-20 mx-auto rounded-2xl text-white p-2 cursor-pointer hover:bg-green-800" onClick={() => handleClick()}>
+        <button className="block mt-10 bg-green-600 w-40 mx-auto rounded-2xl text-white p-2 cursor-pointer hover:bg-green-800" onClick={() => handleClick()}>
           Coba Lagi
         </button>
       </Link>
