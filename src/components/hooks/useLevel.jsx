@@ -10,9 +10,9 @@ const useLevel = () => {
 
     if (level) {
       let duration;
-      if (level === "easy") duration = 300000;
-      else if (level === "medium") duration = 360000;
-      else if (level === "hard") duration = 420000;
+      if (level === "mudah") duration = 300000;
+      else if (level === "normal") duration = 360000;
+      else if (level === "sulit") duration = 420000;
 
       setDeadline(Date.now() + duration);
     }

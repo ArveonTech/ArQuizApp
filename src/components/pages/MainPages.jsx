@@ -94,7 +94,7 @@ const MainPages = () => {
       ) : (
         <div className="flex-1 flex flex-col items-center justify-center">
           <div className="mb-10">
-            <h1 className="text-2xl text-white">Waktu :</h1>
+            <h1 className="text-2xl md:text-3xl text-white">Waktu :</h1>
             <p className="countdown-timer-container">{deadline && <Countdown date={deadline} renderer={renderer} onComplete={() => setClearQuiz(true)} />}</p>
           </div>
           <div className="px-10">{questions.length > 0 && questions[currentIndex] && <Card data={data[currentIndex]} jumlah={questions} key={currentIndex} i={currentIndex} handleClick={handleClick} />}</div>

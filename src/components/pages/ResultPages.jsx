@@ -29,11 +29,11 @@ const ResultPages = () => {
   };
 
   return (
-    <div className="bg-blue-700 min-h-screen flex flex-col justify-center p-10">
+    <div className="bg-gradient-to-br from-blue-500 via-blue-700 to-blue-900  min-h-screen flex flex-col justify-center p-10">
       <h1 className="text-white text-2xl text-center pt-10 mb-10" data-aos="fade-up">
         ✅ Hasil Kuis
       </h1>
-      <h2 className="text-white text-xl text-center mt-4 mb-10" data-aos="fade-up">
+      <h2 className="text-white text-xl text-center  mb-10" data-aos="fade-up">
         🎯 Jawaban Benar : {correctAmount} / {dataSet.length}
       </h2>
       <div className="flex flex-wrap justify-center gap-10" data-aos="fade-up">

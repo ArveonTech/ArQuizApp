@@ -11,17 +11,17 @@ const Card = ({ data, jumlah, i, handleClick }) => {
   return (
     <div className="bg-slate-800 text-slate-100 rounded-2xl shadow-lg p-6 w-full max-w-md" data-aos="fade-up">
       <header className="flex justify-between border-b pb-2">
-        <p>Level : {data.level}</p>
-        <p>
+        <p className="md:text-2xl">Level : {data.level}</p>
+        <p className="text-2xl">
           Soal : {i + 1} / <span>{jumlah.length}</span>
         </p>
       </header>
       <main className="mt-5">
-        <h1 className="text-xl text-justify mb-5">{data.question}</h1>
+        <h1 className="text-xl md:text-2xl text-justify mb-5">{data.question}</h1>
         <div className="grid grid-cols-2 gap-4 mt-4">
           {data.options &&
             data.options.map((op, index) => (
-              <button key={index} className={`${buttonBg[index]} text-white py-2 px-1.5 rounded-lg hover:brightness-110 transition cursor-pointer`} value={op} onClick={(e) => handleClick(e)}>
+              <button key={index} className={`${buttonBg[index]} text-white py-2 px-1.5 rounded-lg hover:brightness-110 transition cursor-pointer text-lg`} value={op} onClick={(e) => handleClick(e)}>
                 {op}
               </button>
             ))}

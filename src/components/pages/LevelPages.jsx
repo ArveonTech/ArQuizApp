@@ -22,13 +22,13 @@ const LevelPages = () => {
       <div className="flex flex-col justify-center items-center " data-aos="fade-up">
         <h1 className="text-center text-white text-2xl mb-10">Pilih Tingkat Kesulitan</h1>
         <div className="flex justify-center text-slate-800 gap-10 mb-10">
-          <button value="easy" className={`bg-green-400 ${baseBtn} hover:bg-green-800 `} data-aos="fade-right" onClick={(e) => handleClick(e)}>
+          <button value="mudah" className={`bg-green-400 ${baseBtn} hover:bg-green-800 `} data-aos="fade-right" onClick={(e) => handleClick(e)}>
             Mudah
           </button>
-          <button value="medium" className={`bg-yellow-400 ${baseBtn} hover:bg-yellow-800`} data-aos="fade-up" onClick={(e) => handleClick(e)}>
+          <button value="normal" className={`bg-yellow-400 ${baseBtn} hover:bg-yellow-800`} data-aos="fade-up" onClick={(e) => handleClick(e)}>
             Normal
           </button>
-          <button value="hard" className={`bg-red-400 ${baseBtn} hover:bg-red-800`} data-aos="fade-left" onClick={(e) => handleClick(e)}>
+          <button value="sulit" className={`bg-red-400 ${baseBtn} hover:bg-red-800`} data-aos="fade-left" onClick={(e) => handleClick(e)}>
             Sulit
           </button>
         </div>
